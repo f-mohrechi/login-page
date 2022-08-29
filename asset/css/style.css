@@ -11,6 +11,16 @@ body{
     overflow: hidden;
 }
 
+:root {
+    --primary-color: #ef388c;
+    --link-color: #999;
+    --light-color: #fff;
+    --dark-color: #333;
+    --border-color: #d9d9d9;
+    --hover-color: #d72979;
+    --input-color: #555;
+}
+
 .wave {
     position: fixed;
     height: 100%;
@@ -59,7 +69,7 @@ form h2 {
     font-size: 2.9rem;
     text-transform: uppercase;
     margin: 15px 0;
-    color: #333;
+    color: var(--dark-color);
 }
 
 .login-container .input-div {
@@ -68,7 +78,7 @@ form h2 {
     grid-template-columns: 7% 93%;
     margin: 25px 0;
     padding: 5px 0;
-    border-bottom: 2px solid #d9d9d9;
+    border-bottom: 2px solid var(--border-color);
 }
 
 .input-div:after, .input-div:before {
@@ -77,12 +87,12 @@ form h2 {
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #d72979;
+    background-color: var(--hover-color);
     transition: 0.3s;
 }
 
 .input-div.focus .i i {
-    color: #d72979;
+    color: var(--hover-color);
 }
 
 .input-div.focus div h5 {
@@ -110,7 +120,7 @@ form h2 {
 }
 
 .i i {
-    color: #d9d9d9;
+    color: var(--border-color);
     transition: 0.3s;
 }
 
@@ -124,7 +134,7 @@ form h2 {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #999;
+    color: var(--link-color);
     font-size: 18px;
     transition: 0.3s;
 }
@@ -141,20 +151,20 @@ form h2 {
     padding: 0.5rem 0.7rem;
     font-size: 1.2rem;
     font-family: 'poppins', sans-serif;
-    color: #555;
+    color: var(--input-color);
 }
 
 a{
     display: block;
     text-align: right;
     text-decoration: none;
-    color: #999;
+    color: var(--link-color);
     font-size: 0.9rem;
     transition: 0.3s;
 }
 
 a:hover {
-    color: #d72979;
+    color: var(--hover-color);
 }
 
 .btn {
@@ -166,11 +176,11 @@ a:hover {
     font-size: 1.2rem;
     outline: none;
     border: none;
-    background-image: linear-gradient(to right, #ef388c, #d72979, #ef388c);
+    background-image: linear-gradient(to right, var(--primary-color), var(--hover-color), var(--primary-color));
     cursor: pointer;
     text-transform: uppercase;
     font-family: 'poppins', sans-serif;
-    color: #fff;
+    color: var(--light-color);
     background-size: 200%;
     transition: 0.5s;
 }
@@ -185,16 +195,16 @@ a:hover {
 }
 
 .fa-brands {
-    color: #ef388c;
-    border: 1px #ef388c solid;
+    color: var(--primary-color);
+    border: 1px var(--primary-color) solid;
     border-radius: 50%;
     padding: 10px;
     margin-top: 1rem;
 }
 
 .fa-brands:hover {
-    background-color: #ef388c;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     font-size: 30px;
     transition: 1s;
 }
