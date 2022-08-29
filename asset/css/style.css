@@ -26,12 +26,13 @@ body{
     height: 100%;
     left: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 2;
     transform: scaleX(-1);
     width: 900px;
 }
 
 .container {
+    background-color: var(--light-color);
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -48,6 +49,7 @@ body{
 
 .img img {
     width: 500px;
+    z-index: 3;
 }
 
 .login-container{
